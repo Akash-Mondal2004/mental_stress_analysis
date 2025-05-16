@@ -7,8 +7,8 @@ import traceback
 app = Flask(__name__)
 
 # Load model and scaler
-model = joblib.load('models/random_forest_modelmodel2.pkl')
-scaler = joblib.load('models/scaler.pkl')
+model = joblib.load('./models/random_forest_modelmodel2.pkl')
+scaler = joblib.load('./models/scaler.pkl')
 
 @app.route('/')
 def home():
